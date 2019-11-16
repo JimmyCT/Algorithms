@@ -1,9 +1,9 @@
-/**
+/*
  * @param {number[][]} intervals
  * @return {number[][]}
  */
 
-var merge = function(intervals) {
+function merge (intervals) {
   let output = [];
   
   if (intervals.length <= 1) {
