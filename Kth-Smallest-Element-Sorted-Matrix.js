@@ -77,4 +77,27 @@ class MinHeap {
 }
 
 var kthSmallest = function(matrix, k) {
+   
+  if (k === 0 || matrix.length === 0) {
+    return 0;
+  }
+  
+  if (k === 1) {
+    return matrix[0][0]
+  }
+  let pQueue = new MinHeap();
+  
+  for(let rowIndex = 0; rowIndex < matrix.length; rowIndex++) {
+    for (let colIndex = 0; colIndex < matrix.length; colIndex++) {
+      pQueue.insertVal(matrix[rowIndex][colIndex]);
+    }
+  }
+  
+  let kthMin;
+  while(k > 0) {
+    kthMin = pQueue.removeMin();
+    k--
+  }
+  
+  return kthMin;
 };
