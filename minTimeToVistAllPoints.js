@@ -1,3 +1,7 @@
+//Given a list of points that needs to be connected in the order they appear in the list
+//return the minimum number of moves to connect all the points
+//1 unit of change can either be 1 unit change in the x direction, 1 unit change in the y, or diagonal (1 in both)
+
 function minTimeToVisitAllPoints(points) {
      let numMoves = 0;
      
