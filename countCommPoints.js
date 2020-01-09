@@ -2,6 +2,8 @@
 //An active cell in the matrix is communicating if there is another active cell within its row or column
 //This function takes in a matrix and returns the number of communicating points within the matrix
 
+//This function has a time complexity of O(mn) where m is the number of rows and n is num columns
+//this function has a space complexity of O(mn) to store (mn) values to the map
 function countCommunicatingPoints(grid) {
     let numComms = 0;
     const map = {
