@@ -19,6 +19,9 @@ function removeLeafHelper(currNode, target) {
   }
 }
 
+
+//removeLeafNodes takes in a tree and removes leaf nodes contaning the target value
+//if a leaf node is removed and a parent node becomes a leaf node, then that node may also need to be removed
 function removeLeafNodes(root, target) {
   
   removeLeafHelper(root, target);
