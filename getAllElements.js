@@ -17,7 +17,7 @@ function fetchVals(root) {
   return output;
 }
 
-var getAllElements = function(root1, root2) {
+function getAllElements(root1, root2) {
   const root1Vals = fetchVals(root1);
   const root2Vals = fetchVals(root2);
   
