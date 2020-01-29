@@ -1,10 +1,6 @@
-/*
- * @param {string} s1
- * @param {string} s2
- * @return {boolean}
- */
-
-  
+//takes in two strings s1 and s2 and sees if there is a substring of s2 that is a permuation of s1
+//this algorithim uses O(n) space where n is the length of s1
+//since s2 is the longer string, we expect a worse case time complexity of O(n^2) where n is th length of s2  
 function checkInclusion(s1, s2) {
   let charToCharCount = {};
   let missingUniqueCharsCounter = 0;
