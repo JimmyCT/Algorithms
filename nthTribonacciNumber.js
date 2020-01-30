@@ -2,14 +2,16 @@
 //this function returns the nth tribonacci number
 
 function tribonacci(n) {
-  if (n === 0) {
-    return 0
+	const memo = {0:0, 1:1, 2:1};
+
+  function tribHelper(n) {
+    if (memo[n] !== undefined) {
+      return memo[n];
+    } else {
+      memo[n]= tribHelper(n - 3) + tribHelper(n - 2) + tribHelper(n - 1);
+      return memo[n];
+    }
   }
   
-  if (n === 1 || n === 2) {
-    return 1
-  }
-  
-  
-  return tribonacci(n - 3) + tribonacci(n - 2) + tribonacci(n - 1);
-};
+  return tribHelper(n);
+}
