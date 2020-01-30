@@ -1,3 +1,5 @@
+//merge sort algorithim runs in O(n) space complexity where n is the length of the passed array
+//time complexity fo the merge sort algoritim runs in O(nLog(n)) time
 function mergeSort(arr) {
   if (arr.length === 1) {
     return arr;
