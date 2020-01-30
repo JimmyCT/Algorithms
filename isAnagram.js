@@ -1,4 +1,6 @@
-
+//time complexity of the function runs in O(n) where n is the length of either string s or string t 
+//when they are of equal lengths
+//space complexity of the function is also in O(n) where n is the length of either string s or string t
  function isAnagram(s, t) {
   if (s.length !== t.length) {
     return false;
