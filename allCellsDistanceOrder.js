@@ -1,3 +1,5 @@
+
+// this function runs in O(n) time where n is = R * C as well as O(n) storage
 function allCellsDistOrder(R, C, r0, c0) {
   //treat r0 c0 as a target cord
   //iterate through the RxC matrix and add the cordinnates to hashtable based on distance to target cord
