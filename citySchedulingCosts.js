@@ -1,5 +1,8 @@
  
-
+//Takes in a list of 2N cost decisions and returns the minimum cost such that cities A and B 
+//receive N choices
+//This algorithm runs in O(n^2) time where n is the number of costs provided due to the insertion sort algorithm
+//and it uses O(n) space to store the cost differences in order from least to greatest
 function citySchedulingCosts(costs) {
   //create a list of costDifferences between cities per person sorted from least to greatest
   //iterate length of costs divided by 2 through the costDifferences list in such a way that the lowest
