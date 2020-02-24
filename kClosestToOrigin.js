@@ -1,6 +1,9 @@
 //Takes in a list of points and a number K
 //and returns the K closest points to (0, 0);
 
+//Algorithim runs in O(n^2) time where n is the number of points 
+//and uses O(n) space
+
 function kClosestToOrigin(points, K) {
   const distances = [];
   
