@@ -1,3 +1,5 @@
+//this function runs in a O(n) average time where n is the length of the stirng passed in
+//This function contains O(1) space as the list of of frequencies and indicies are a fixed amount
 function firstNotRepeatingCharacter(s) {
     if (s.length === 1) {
         return s[0];
