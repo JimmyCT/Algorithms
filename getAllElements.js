@@ -1,3 +1,4 @@
+//assuming we may be dealing with unbalanced trees, the fetchVals function runs in O(n) time average case and space worst case where n is the number of nodes in the tree
 function fetchVals(root) {
   const output = [];
   const stack = [];
