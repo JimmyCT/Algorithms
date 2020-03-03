@@ -1,3 +1,5 @@
+ //The time complexity of generatingNRows of Pascals Triangle is O(n^2) because for n iterations we are running (n - 1 operations) thus n(n -1) = n^2 - n or O(n^2)
+ //as well as using O(n^2) space
  function generateNRowsPascalsTriangle(numRows) {
     const output = [];
     
